@@ -13,10 +13,137 @@
 </head>
 
 <body>
-  <h1>Старт проекта!</h1>
-  <picture>
-    <img width="200" height="55" src="./img/logotype@1x.png" srcset="./img/logotype@2x.png 2x" alt="Логитип Fix Ремонт">
-  </picture>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <picture>
+          <img width="200" height="55" src="./img/logotype@1x.png" srcset="./img/logotype@2x.png 2x"
+            alt="Логитип Fix Ремонт" />
+        </picture>
+      </div>
+      <a class="page-header__contact-link" href="#">
+        <svg class="page-header__link-icon" width="24" height="24" viewBox="0 0 24 24">
+          <use xlink:href="#icon-tel"></use>
+        </svg>
+        Контакты
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-banner">
+      <div class="main-banner__desc">
+        <div class="main-banner__text">
+          <h1>Ремонт квартир в типовых домах</h1>
+          <p class="main-banner__text-desc">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</p>
+          <a class="main-banner__text-link button-link" href="#">Узнайте о запуске первым</a>
+          <p class="main-banner__text-start">Старт весной 2016</p>
+        </div>
+
+        <a class="main-banner__screen-anchor" href="">
+          <svg width="43" height="32" viewBox="0 0 43 32">
+            <use xlink:href="#icon-arrows"></use>
+          </svg>
+          Листайте вниз,<br /> чтобы ничего не упустить</a>
+      </div>
+
+      <div class="main-banner__video">
+        <button class="main-banner__video-btn" type="button">
+        </button>
+      </div>
+    </div>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <div class="advantages__title">
+        <p class="advantages__title-heading">FIX Ремонт — это легко</p>
+        <p class="advantages__title-desc">Готовые проекты, проверенные материалы и умелые руки</p>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages__list-item">
+          <p class="advantages__tag">Опытная команда</p>
+          <p class="advantages__tag-desc">Команда проектировщиков и строителей со стажем работы более 6 лет</p>
+        </li>
+        <li class="advantages__list-item">
+          <p class="advantages__tag">Типовые дизайн-проекты</p>
+          <p class="advantages__tag-desc">Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг</p>
+        </li>
+        <li class="advantages__list-item">
+          <p class="advantages__tag">Фиксированная смета</p>
+          <p class="advantages__tag-desc">Никаких дополнительных расходов во время ремонта.Расчет стоимости при
+            заключении договора</p>
+        </li>
+        <li class="advantages__list-item advantages__list-item--timing">
+          <p class="advantages__tag">Срок работ</p>
+          <p class="advantages__tag-desc">3 месяца</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="works">
+      <h2 class="visually-hidden">Наши работы</h2>
+      <div class="works__title">
+        <p class="works__title-heading">3 стиля интерьера</p>
+        <p class="works__title-desc">Скандинавский, классический и эко-стиль</p>
+      </div>
+      <div class="slider__wrapper">
+        <ul class="works__list slider">
+          <li class="works__list-item slider__item">
+            <div class="works__item-img">
+              <picture>
+                <img width="750" height="500" src="./img/work-preview-1@1x.jpg" srcset="./img/work-preview-1@2x.jpg 2x"
+                  alt="Фото выполненной работы">
+              </picture>
+            </div>
+            <p class="works__item-desc">Кафельная плиткав ванной комнате
+              в скандинавском стиле</p>
+
+          </li>
+          <li class="works__list-item slider__item">
+            <div class="works__item-img">
+              <picture>
+                <img width="750" height="500" src="./img/work-preview-1@1x.jpg" srcset="./img/work-preview-1@2x.jpg 2x"
+                  alt="Фото выполненной работы">
+              </picture>
+            </div>
+            <p class="works__item-desc">Кафельная плиткав ванной комнате
+              в скандинавском стиле</p>
+
+          </li>
+          <li class="works__list-item slider__item">
+            <div class="works__item-img">
+              <picture>
+                <img width="750" height="500" src="./img/work-preview-1@1x.jpg" srcset="./img/work-preview-1@2x.jpg 2x"
+                  alt="Фото выполненной работы">
+              </picture>
+            </div>
+            <p class="works__item-desc">Кафельная плиткав ванной комнате
+              в скандинавском стиле</p>
+
+          </li>
+        </ul>
+        <div class="slider__controls">
+          <button class="slider__btn slider__btn--prev" type="button">
+            <svg class="slider__controls-icon" width="24" height="46" viewBox="0 0 24 46">
+              <use xlink:href="#icon-angle"></use>
+            </svg>
+          </button>
+          <button class="slider__btn slider__btn--next" type="button">
+            <svg class="slider__controls-icon" width="24" height="46" viewBox="0 0 24 46">
+              <use xlink:href="#icon-angle"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
+
+<script type="module" src="js/script.js"></script>
 
 </html>

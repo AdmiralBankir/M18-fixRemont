@@ -1,0 +1,10 @@
+:root {
+  --main-accent-r: 249;
+  --main-accent-g: 87;
+  --main-accent-b: 46;
+  --main-accent-a: 1;
+
+  --main-accent-color: rgba(var(--main-accent-r) var(--main-accent-g) var(--main-accent-b) / var(--main-accent-a));
+  --mid-grey-color: #666666;
+  --green-separate-color: #33b5a3;
+}

@@ -1,0 +1,19 @@
+/* Button or Link styles */
+
+.button-link {
+  font-family: MullerMedium;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 17px 29px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+
+  --btn-background-color: var(--main-accent-color);
+
+  background: var(--btn-background-color);
+  box-shadow: 0px 7px 15px rgba(var(--main-accent-r) var(--main-accent-g) var(--main-accent-b) / 0.6);
+}

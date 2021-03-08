@@ -1,3 +1,13 @@
 @import "normalize.css";
+@import "fonts.css";
+@import "common.css";
+@import "variables.css";
 
 @import "./blocks/visually-hidden.css";
+@import "./blocks/page-header.css";
+@import "./blocks/main-banner.css";
+@import "./blocks/button-link.css";
+@import "./blocks/advantages.css";
+@import "./blocks/works.css";
+@import "./blocks/slider.css";
+

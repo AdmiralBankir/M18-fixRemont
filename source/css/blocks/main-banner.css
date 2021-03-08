@@ -1,0 +1,107 @@
+/* Main Banner */
+
+.main-banner {
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh)*100);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* Description */
+
+.main-banner__desc {
+  width: 510px;
+  padding-top: 308px;
+  padding-left: 106px;
+  padding-bottom: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-banner__desc h1 {
+  font-family: "MullerMedium";
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -0.5px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+/* Text */
+
+.main-banner__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-banner__text-desc {
+  width: 90%;
+  margin: 0;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: -0.01px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+.main-banner__text-start {
+  color: var(--mid-grey-color);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01px;
+  padding: 0;
+  margin: 0;
+  margin-left: 31px;
+}
+
+/* Screen anchor */
+
+.main-banner__screen-anchor {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  column-gap: 12px;
+  text-decoration: none;
+  font-family: "MullerMedium";
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.01px;
+  color: var(--main-accent-color);
+}
+
+/* Video */
+
+.main-banner__video {
+  background-image: url('../img/video-preview@1x.jpg');
+  background-size: cover;
+  margin: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.main-banner__video-btn {
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 255px;
+  height: 255px;
+  box-sizing: border-box;
+  background: url('../img/play@2x.png');
+  background-size: cover;
+}
+
+.main-banner__video-btn::after {
+  position: absolute;
+  content: 'Смотреть видео';
+  font-size: 21px;
+  line-height: 30px;
+  bottom: 0;
+  width: max-content;
+  color: var(--main-accent-color);
+  transform: translate(-50%, calc(100% + 19px));
+}
