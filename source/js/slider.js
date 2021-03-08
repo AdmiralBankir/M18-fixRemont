@@ -1,5 +1,9 @@
 'use strict';
 
+import {
+  debounce
+} from './debounce.js';
+
 class Slider {
   constructor(sliderLink) {
     this.slider = sliderLink;
@@ -12,6 +16,7 @@ class Slider {
     this.activeSlide = 0;
     this.maxProgress = 0;
     this.numOfSlides = this.slides.length;
+    this.clickInterval = 1000;
   };
 
   initSlider() {
@@ -27,6 +32,7 @@ class Slider {
   }
 
   step(direction) {
+    console.log(this)
     this.slides[this.activeSlide].classList.remove('slider__item--active');
 
     this.progress += direction * this.sliderStep;
@@ -49,7 +55,7 @@ class Slider {
     this.slider.style = `transform: translateX(${this.progress}` + 'px)';
     this.slides[this.activeSlide].classList.add('slider__item--active');
   };
-}
+};
 
 const initSlider = () => {
   const sliderLink = document.querySelector('.slider');
@@ -59,8 +65,10 @@ const initSlider = () => {
   const btnPrev = document.querySelector('.slider__btn--prev');
   const btnNext = document.querySelector('.slider__btn--next');
 
-  btnPrev.addEventListener('click', () => slider.step(1));
-  btnNext.addEventListener('click', () => slider.step(-1));
+  const onBtnSliderClick = debounce(slider.step, slider.clickInterval).bind(slider);
+
+  btnPrev.addEventListener('click', () => onBtnSliderClick(1));
+  btnNext.addEventListener('click', () => onBtnSliderClick(-1));
 
 };
 
