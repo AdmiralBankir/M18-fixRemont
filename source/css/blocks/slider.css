@@ -25,7 +25,22 @@
 
 /* Slider */
 
+.slider {
+  transition: transform 1s ease-in-out;
+}
+
 .slider__wrapper {
   position: relative;
   overflow: hidden;
+}
+
+/* Slider item */
+
+.slider__item {
+  transition: opacity 1s ease-in-out;
+  opacity: 0.3;
+}
+
+.slider__item--active {
+  opacity: 1;
 }
