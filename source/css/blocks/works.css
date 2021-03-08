@@ -49,8 +49,6 @@
   list-style: none;
   display: flex;
   column-gap: var(--slide-gap);
-
-  transition: transform 1s ease-in-out;
 }
 
 .works__list-item {
