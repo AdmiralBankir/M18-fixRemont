@@ -10,6 +10,7 @@
   margin: 0 auto;
   border: 2px solid var(--green-accent-color);
   padding: 72px 240px 59px;
+  position: relative;
 }
 
 /* Title */
