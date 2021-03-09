@@ -6,5 +6,7 @@
 
   --main-accent-color: rgba(var(--main-accent-r) var(--main-accent-g) var(--main-accent-b) / var(--main-accent-a));
   --mid-grey-color: #666666;
+  --grey-color:  #f2f2f2;
   --green-separate-color: #33b5a3;
+  --green-accent-color: #63d2c1;
 }

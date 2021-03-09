@@ -164,6 +164,43 @@
         </div>
       </div>
     </section>
+
+    <form class="form">
+      <p class="form__title">Узнайте о запуске сервиса первым</p>
+
+      <div class="form__offer">
+        <picture>
+          <img width="46" height="69" src="./img/doors@1x.png" srcset="./img/doors@2x.png 2x" alt="Иконка дверей">
+        </picture>
+        <p class="form__offer-text">Первым 10 клиентам стальная входная дверь в подарок</p>
+      </div>
+
+      <div class="form__inputs">
+        <div class="form__input form__input-name">
+          <label class="visually-hidden" for="user-name">Имя и фамилия</label>
+          <input type="text" id="user-name" name="user-name" placeholder="Имя и фамилия*" required>
+        </div>
+
+        <div class="form__input form__input-email">
+          <label class="visually-hidden" for="user-email">E-mail</label>
+          <input type="email" id="user-email" name="user-email" placeholder="Е-mail адрес*" required>
+        </div>
+
+        <div class="form__input form__input-tel">
+          <label class="visually-hidden" for="phone-number">Телефон</label>
+          <input type="tel" id="phone-number" name="user-phone-number" pattern="^(\s*)?(\+)?([-()+]?\d[-()+]?)*(\s*)?$"
+            minlength="10" placeholder="Телефон">
+        </div>
+      </div>
+
+      <button class="button-link" type="submit">Подписаться</button>
+
+      <div class="form__confident">
+        <p class="form__confident-required">* Обязательные для заполнения поля</p>
+        <a class="form__confident-link" href="#">Политика конфиденциальности</a>
+      </div>
+    </form>
+
   </main>
 
 </body>
