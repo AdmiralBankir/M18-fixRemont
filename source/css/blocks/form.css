@@ -48,12 +48,30 @@
 
 /* Inputs */
 
+.form__input {
+  position: relative;
+  --input-padding: 25px;
+}
+
 .form__input input {
   box-sizing: border-box;
   width: 100%;
-  padding: 18px 25px;
+  padding: 18px var(--input-padding);
   border: 1px solid #cccccc;
   border-radius: 4px;
+  outline: none;
+}
+
+.form__input--invalid input {
+  border: 1px solid var(--main-accent-color);
+}
+
+.form__input input:focus+.form__input-label {
+  display: block;
+}
+
+.form__input--invalid input:focus+.form__input-label {
+  color: var(--main-accent-color);
 }
 
 .form__inputs {
@@ -61,6 +79,19 @@
   display: grid;
   row-gap: 30px;
   margin-bottom: 48px;
+}
+
+.form__input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  padding: 0 7px;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--mid-grey-color);
+  transform: translate(calc(var(--input-padding) - 7px), -10px);
 }
 
 /* Submit Btn */

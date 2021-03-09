@@ -9,4 +9,7 @@
   --grey-color:  #f2f2f2;
   --green-separate-color: #33b5a3;
   --green-accent-color: #63d2c1;
+
+  --transition-func: linear;
+  --transition-time: 0.3s;
 }
