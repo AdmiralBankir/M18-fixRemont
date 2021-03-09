@@ -1,0 +1,126 @@
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 984px;
+  min-height: 647px;
+  margin: 0 auto;
+  border: 2px solid var(--green-accent-color);
+  padding: 72px 240px 59px;
+  position: relative;
+}
+
+/* Title */
+
+.form__title {
+  font-family: "MullerMedium";
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  margin: -96px 0 41px;
+  background: #fff;
+  padding: 0 20px;
+  width: max-content;
+}
+
+/* Offer */
+
+.form__offer {
+  display: grid;
+  grid-template-columns: 46px 300px;
+  column-gap: 17px;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.form__offer-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Inputs */
+
+.form__input {
+  position: relative;
+  --input-padding: 25px;
+}
+
+.form__input input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px var(--input-padding);
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form__input--invalid input {
+  border: 1px solid var(--main-accent-color);
+}
+
+.form__input input:focus+.form__input-label {
+  display: block;
+}
+
+.form__input--invalid input:focus+.form__input-label {
+  color: var(--main-accent-color);
+}
+
+.form__inputs {
+  width: 100%;
+  display: grid;
+  row-gap: 30px;
+  margin-bottom: 48px;
+}
+
+.form__input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  padding: 0 7px;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--mid-grey-color);
+  transform: translate(calc(var(--input-padding) - 7px), -10px);
+}
+
+/* Submit Btn */
+
+.form .button-link {
+  padding: 17px 75px 15px;
+  margin-bottom: 23px;
+}
+
+/* Confifent */
+
+.form__confident {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__confident-required,
+.form__confident-link {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.form__confident-required {
+  margin: 0;
+  color: var(--mid-grey-color);
+}
+
+.form__confident-link {
+  text-decoration: none;
+  color: var(--main-accent-color);
+}

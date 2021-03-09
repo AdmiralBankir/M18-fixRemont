@@ -1,0 +1,40 @@
+/* Success */
+
+.success {
+  --outer-gap: 30px;
+  position: absolute;
+  top: var(--outer-gap);
+  left: var(--outer-gap);
+  width: calc(100% - 2 * var(--outer-gap));
+  height: calc(100% - 2 * var(--outer-gap));
+  background-color: #fff;
+  z-index: 2;
+}
+
+/* Message */
+
+.success__message {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  width: 285px;
+  padding-top: 357px;
+}
+
+.success__message::before {
+  content: '';
+  position: absolute;
+  width: 194px;
+  height: 140px;
+  bottom: 0;
+  left: 0;
+  transform: translate(50px,-100px);
+  background-image: url("../../img/success@1x.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
