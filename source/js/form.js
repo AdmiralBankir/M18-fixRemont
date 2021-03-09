@@ -5,7 +5,7 @@ const submnitBtn = form.querySelector('button[type="submit"]');
 const successMessage = document.querySelector('#success').content.querySelector('.success').cloneNode(true);
 
 const inputEmail = form.querySelector('input[type="email"]');
-const inputs = form.querySelectorAll('input');
+const inputsWrapper = form.querySelectorAll('.form__input');
 
 function isValidEmail(email) {
   const re = /\S+@\S+\.\S+/;
@@ -13,14 +13,16 @@ function isValidEmail(email) {
 };
 
 function isInputsValid() {
-  return !(Array.from(inputs).some((input) => {
-    input.classList.contains('form__input--invalid')
+  return !(Array.from(inputsWrapper).some((input) => {
+    return input.classList.contains('form__input--invalid');
   }));
 };
 
 function isInputsNotEmpty() {
   let isEmpty = 0;
-  inputs.forEach((input) => {
+  const requiredInputs = form.querySelectorAll('input[required]');
+
+  requiredInputs.forEach((input) => {
     isEmpty += (input.value.trim() === '');
   })
 
@@ -28,9 +30,10 @@ function isInputsNotEmpty() {
 };
 
 const formCtrl = () => {
-  submnitBtn.addEventListener('click', () => {
+  submnitBtn.addEventListener('click', (evt) => {
     if(isInputsValid() && isInputsNotEmpty()) {
       form.append(successMessage);
+      evt.preventDefault();
     }
   });
 
