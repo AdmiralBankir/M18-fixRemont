@@ -32,7 +32,6 @@ class Slider {
   }
 
   step(direction) {
-    console.log(this)
     this.slides[this.activeSlide].classList.remove('slider__item--active');
 
     this.progress += direction * this.sliderStep;
