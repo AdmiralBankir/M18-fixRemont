@@ -4,12 +4,14 @@
 @import "variables.css";
 
 @import "./blocks/visually-hidden.css";
+@import "./blocks/button-link.css";
+@import "./blocks/contact-link.css";
 @import "./blocks/page-header.css";
 @import "./blocks/main-banner.css";
-@import "./blocks/button-link.css";
 @import "./blocks/advantages.css";
 @import "./blocks/works.css";
 @import "./blocks/slider.css";
 @import "./blocks/form.css";
-@import "./blocks//success.css";
+@import "./blocks/success.css";
+@import "./blocks/page-footer.css";
 
