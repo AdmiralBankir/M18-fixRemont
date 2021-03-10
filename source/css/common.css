@@ -1,3 +1,7 @@
 body {
   font-family: "MullerRegular", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
