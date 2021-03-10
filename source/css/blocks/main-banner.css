@@ -74,6 +74,22 @@
   color: var(--main-accent-color);
 }
 
+.main-banner__screen-anchor-icon--hover {
+  display: none;
+}
+
+.main-banner__screen-anchor:hover .main-banner__screen-anchor-icon {
+  display: none;
+}
+
+.main-banner__screen-anchor:hover .main-banner__screen-anchor-icon--hover {
+  display: block;
+}
+
+.arrow {
+  fill: none;
+}
+
 /* Video */
 
 .main-banner__video {
@@ -93,6 +109,14 @@
   box-sizing: border-box;
   background: url('../img/play@2x.png');
   background-size: cover;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.main-banner__video-btn:hover {
+  background: url('../img/play-hover@2x.png');
+  background-size: cover;
+  background-position-x: -1px;
 }
 
 .main-banner__video-btn::after {

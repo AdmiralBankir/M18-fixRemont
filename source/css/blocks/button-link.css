@@ -1,7 +1,7 @@
 /* Button or Link styles */
 
 .button-link {
-  font-family: MullerMedium;
+  font-family: "MullerMedium";
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
@@ -11,9 +11,19 @@
   padding: 17px 29px;
   padding-bottom: 15px;
   border-radius: 30px;
+  cursor: pointer;
 
   --btn-background-color: var(--main-accent-color);
 
   background: var(--btn-background-color);
   box-shadow: 0px 7px 15px rgba(var(--main-accent-r) var(--main-accent-g) var(--main-accent-b) / 0.6);
+}
+
+.button-link__hover {
+  transition: all var(--transition-func) var(--transition-time);
+}
+
+.button-link__hover:hover {
+  background-color: var(--main-accent-hover);
+  box-shadow: 0px 15px 20px rgba(var(--main-accent-r) var(--main-accent-g) var(--main-accent-b) / 0.7);
 }

@@ -4,7 +4,13 @@
   --main-accent-b: 46;
   --main-accent-a: 1;
 
+  --main-accent-hover-r: calc(var(--main-accent-r) + 6);
+  --main-accent-hover-g: calc(var(--main-accent-g) + 36);
+  --main-accent-hover-b: calc(var(--main-accent-b) + 43);
+  --main-accent-hover-a: 1;
+
   --main-accent-color: rgba(var(--main-accent-r) var(--main-accent-g) var(--main-accent-b) / var(--main-accent-a));
+  --main-accent-hover: rgba(var(--main-accent-hover-r) var(--main-accent-hover-g) var(--main-accent-hover-b) / var(--main-accent-hover-a));
   --mid-grey-color: #666666;
   --grey-color:  #f2f2f2;
   --green-separate-color: #33b5a3;
