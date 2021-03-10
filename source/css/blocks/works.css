@@ -2,8 +2,8 @@
 
 .works {
   width: 100%;
-  margin-top: 184px;
-  margin-bottom: 138px;
+  margin-top: 190px;
+  margin-bottom: 161px;
 }
 
 /* Title */
@@ -35,14 +35,16 @@
 
 /* Works list */
 
-.works__list {
+.slider.works__list {
   --item-img-width: 750px;
   --item-desc-width: 144px;
   --item-column-gap: 18px;
 
-  --slide-gap: 165px;
+  --slide-gap: 70px;
   --slide-width: calc(var(--item-img-width) + var(--item-desc-width) + var(--item-column-gap));
+}
 
+.works__list {
   margin: 0;
   padding: 0;
   margin-left: 24%;
@@ -78,10 +80,11 @@
   line-height: 20px;
 }
 
-/* Works Slider */
+/* Works Slider пока не получилось унаследовать переменную*/
 
-.works .slider__controls {
+.slider.works__list+.slider__controls {
+  --slide-width: 912px;
   position: absolute;
-  bottom: 0;
-  right: 24%;
+  bottom: -7px;
+  left: calc(24vw + var(--slide-width) - 85px);
 }

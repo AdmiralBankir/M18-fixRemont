@@ -5,7 +5,8 @@
   height: 100vh;
   height: calc(var(--vh, 1vh)*100);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  --left-section: 48%;
+  grid-template-columns: var(--left-section) 1fr;
 }
 
 
@@ -111,6 +112,7 @@
   background-size: cover;
   cursor: pointer;
   box-sizing: border-box;
+  transform: translateY(-55px);
 }
 
 .main-banner__video-btn:hover {
